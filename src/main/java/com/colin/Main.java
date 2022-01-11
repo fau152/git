@@ -7,5 +7,8 @@ public class Main {
 
         //正常合并演示：edit by hot-fix
         System.out.println("helle git, edit by hot-fix");
+
+        //冲突合并分支演示：
+        System.out.println("master test");
     }
 }
