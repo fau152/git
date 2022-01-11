@@ -70,4 +70,15 @@
    ![img.png](image/mdImg/img7.png)
 
 ## 4. 拉取远程库代码合并本地库
-  
+工具栏->git->pull将远程代码拉取到本地库更新本地代码。
+需要注意的是如果远程代码和本地代码有冲突的话，可能需要手动合并
+
+## 5. 克隆远程代码
+   git->clone->输入项目链接->克隆远程代码到本地
+   
+# 九、gitee复制GitHub仓库
+1. 首页点击加号->新建仓库
+2. ![img.png](image/mdImg/img8.png)
+3. ![img_1.png](image/mdImg/img9.png)
+4. ![img_1.png](image/mdImg/img10.png)如果后续github上的项目有更新，可以点击该按钮获取最新的代码同步
+
