@@ -39,8 +39,12 @@
 
 # 七、合并分支
 ## 正常合并
-
+![img.png](mdImg/img5.png)
+1. 在hot-fix分支下对代码进行修改
+2. 切换到master分支下
+3. 点击hot-fix -> 点击Merge into Current将hot-fix分支的代码合并到master分支上
 ## 冲突合并
+
 
 
   
