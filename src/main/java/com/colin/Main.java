@@ -10,5 +10,8 @@ public class Main {
 
         //冲突合并分支演示：
         System.out.println("master test");
+
+        //冲突合并分支演示：
+        System.out.println("hot-fix test");
     }
 }
