@@ -44,7 +44,10 @@
 2. 切换到master分支下
 3. 点击hot-fix -> 点击Merge into Current将hot-fix分支的代码合并到master分支上
 ## 冲突合并
-
+![img.png](mdImg/img6.png)
+- 当hot-fix分支提交的代码和master提交的代码有冲突的时候
+- 在master分支进行合并分支操作(Mergin into Current)时会弹出冲突对话框，提示我们手动合并
+- 按照上图操作即可。
 
 
   
