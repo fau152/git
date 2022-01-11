@@ -16,5 +16,8 @@ public class Main {
 
         //----------修改代码，push到远程库测试-----------
         System.out.println("push test");
+        
+        //----------在远程仓库修改代码，然后拉取合并到本次仓库测试---------
+        System.out.println("添加与Github远程仓库");
     }
 }
