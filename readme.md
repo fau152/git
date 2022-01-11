@@ -49,5 +49,16 @@
 - 在master分支进行合并分支操作(Mergin into Current)时会弹出冲突对话框，提示我们手动合并
 - 按照上图操作即可。
 
+---
+# 八、idea集成GitHub
+## 1. Github账号添加
+1. seting->version control->Github
+2. 点击“加号”->Login with Token->Generate（由于账号密码登录比较困难，所以选择使用口令登录）
+3. 点击所有权限，使得口令登录和账号密码登录有一样的效果
+4. 点击Generate Token->复制Token然后登录（需要注意的是，请保存该token，因为当页面刷新的时候token将不再显示，需要重新生成）
 
+## 2. 分享工程到GitHub
+
+## 3. 本地代码修改之后，push到远程库
+## 4. 拉取远程库代码合并本地库
   
