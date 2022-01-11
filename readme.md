@@ -29,4 +29,18 @@
 ![img.png](mdImg/img3.png)
 选择版本列表中某个历史版本，右键checkout revison切换到这个版本
 
+# 六、创建分支和切换分支
+## 创建分支
+1. 项目文件夹右键->git->branches->new branche创建一个分支
+2. 点击idea的右下角的分支符号，然后new branche创建分支
+## 切换分支
+![img.png](mdImg/img4.png)
+点击要切换的分支checkout即切换到当前分支
+
+# 七、合并分支
+## 正常合并
+
+## 冲突合并
+
+
   
