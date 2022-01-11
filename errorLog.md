@@ -1,3 +1,4 @@
+# 报错1
 当我配置好了Github账号，准备将自己的项目分享到Github上的时候，报了如下错误：
 > 15:37	Can't finish GitHub sharing process 
 > Successfully created project 'git' on GitHub, but initial push failed;
@@ -5,12 +6,12 @@
 
 该错误出现的原因是：访问超时，就是网络不好。
 
-# 解决过程
-## 一、 取消勾选clone git repostiries use ssh
+## 解决过程
+### 一、 取消勾选clone git repostiries use ssh
 ![img.png](image/%20mdImg2/img.png)
 检查之后发现并发生此错误的时候并没有勾选该选项，所以排除这个可能
 
-## 二、取消http/https代理
+### 二、取消http/https代理
 如果之前有在git的配置文件中配置过http/https代理的话，可以执行该语句取消该配置
 ```gitexclude
 #取消http代理
@@ -41,7 +42,7 @@ git config --global --unset https.proxy
 	ignorecase = true
 ```
 所以也不是这个原因
-## 三、网络问题，访问不到
+### 三、网络问题，访问不到
 一开始，我没有怀疑是这个问题，因为我使用了dev-sidecar，浏览器访问github官网是可以正常访问的。
 但是我在git-bash和命令行中分别执行`ping github.com`都是超时，ping不通的，所以我就确定了应该是网络问题导致无法push
 
@@ -79,3 +80,17 @@ git config --global --unset https.proxy
 ```
 注意：只有最后三行是自己添加的，前面的都不要改
 4. 配置完hosts文件之后，`ping github.com`就能ping通了，之后再进行push等操作就可以执行成功了。
+
+---
+# 报错2
+> fatal: unable to access 'https://github.com/fau152/git.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+
+产生原因：一般是这是因为服务器的SSL证书没有经过第三方机构的签署，所以才报错，参考网上解决办法：解除ssl验证后，再次git即可
+```gitexclude
+git config --global http.sslVerify "false"
+```
+或者手动在配置文件中添加如下配置信息：
+```gitexclude
+[http]
+	sslVerify = false
+```
