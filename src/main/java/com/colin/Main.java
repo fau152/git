@@ -13,5 +13,8 @@ public class Main {
 
         //冲突合并分支演示：
         System.out.println("hot-fix test");
+
+        //----------修改代码，push到远程库测试-----------
+        System.out.println("push test");
     }
 }
