@@ -94,3 +94,22 @@ git config --global http.sslVerify "false"
 [http]
 	sslVerify = false
 ```
+
+# 报错3
+> Can't finish GitHub sharing process
+>Successfully created project 'spring' on GitHub, but initial push failed:
+>unable to access 'https://github.com/fau152/spring.git/': OpenSSL SSL_connect: Connection was reset in connection to github.com:443
+
+产生原因：hosts文件中配置了多余的代理，删除即可
+
+这个报错乍一看和报错2非常相像，但是后面报错信息不同，这个由于我在解决报错1的时候多配置了代理
+当时配置的代理信息如下：
+```gitexclude
+# Github Start
+140.82.112.4    github.com
+199.232.69.194  github.global.ssl.fastly.net
+```
+实际上只需要配置第一个即可，所以在这里将第二条配置删除即可。修改后的配置如下；
+```gitexclude
+140.82.112.4    github.com
+```
